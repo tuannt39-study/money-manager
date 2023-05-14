@@ -1,0 +1,25 @@
+
+spring:
+  application:
+    name: money-manager
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:h2:file:./src/main/resources/database/money-manager;DB_CLOSE_DELAY=-1;MODE=LEGACY
+    username: money-manager
+    password: 12345678
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  thymeleaf:
+    mode: HTML
+    cache: false
+  h2:
+    console:
+      enabled: true
+
+server:
+  servlet:
+    session:
+      cookie:
+        http-only: true
