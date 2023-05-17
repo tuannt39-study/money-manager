@@ -11,15 +11,6 @@ spring:
     driver-class-name: org.h2.Driver
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-  thymeleaf:
-    mode: HTML
-    cache: false
   h2:
     console:
       enabled: true
-
-server:
-  servlet:
-    session:
-      cookie:
-        http-only: true
